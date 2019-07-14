@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\works\\rasabot\\_server\\yourbot\\storage\\data\\bots/tho_trang/model_rasa_intent\\component_3_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "D:\\works\\rasabot\\_server\\yourbot\\storage\\data\\bots/tho_trang/model_rasa_intent\\component_3_EmbeddingIntentClassifier.ckpt"

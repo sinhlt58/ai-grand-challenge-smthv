@@ -1,0 +1,72 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "user_current_subject"
+      ]
+    },
+    "app_form_get_answer": {
+      "slots": []
+    },
+    "app_form_get_user_info": {
+      "slots": []
+    },
+    "app_app_custom_check_answer": {
+      "slots": [
+        "user_answer_result"
+      ]
+    },
+    "app_set_slot_after_answer_result_wrong": {
+      "slots": [
+        "user_answer_result"
+      ]
+    },
+    "action_deactivate_form": {
+      "slots": []
+    },
+    "app_form_choose_subject": {
+      "slots": []
+    },
+    "app_set_slot_after_choose_subject": {
+      "slots": [
+        "user_current_subject"
+      ]
+    },
+    "app_form_choose_english_skill": {
+      "slots": []
+    },
+    "app_form_set_reminder": {
+      "slots": []
+    },
+    "app_app_custom_check_user_existed": {
+      "slots": [
+        "user_is_existed"
+      ]
+    },
+    "app_set_slot_after_answer_result_correct": {
+      "slots": [
+        "user_answer_result"
+      ]
+    }
+  },
+  "python": "3.6.7",
+  "max_histories": [
+    10,
+    20,
+    2,
+    5,
+    null
+  ],
+  "ensemble_name": "rasa.core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa.core.policies.keras_policy.KerasPolicy",
+    "rasa.core.policies.memoization.MemoizationPolicy",
+    "rasa.core.policies.form_policy.FormPolicy",
+    "rasa.core.policies.mapping_policy.MappingPolicy",
+    "rasa.core.policies.fallback.FallbackPolicy"
+  ],
+  "trained_at": "20190714-061932",
+  "rasa": "1.1.4",
+  "tensorflow": "1.13.1",
+  "sklearn": "0.20.3"
+}

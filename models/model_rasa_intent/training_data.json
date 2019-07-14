@@ -1,0 +1,221 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "get_started",
+        "text": "bắt đầu như thế nào"
+      },
+      {
+        "intent": "get_started",
+        "text": "mình muốn dùng"
+      },
+      {
+        "intent": "get_started",
+        "text": "how to get started"
+      },
+      {
+        "intent": "get_started",
+        "text": "get started"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "form_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "form_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "form_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "form_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "luyện form_english_skill anh"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "học form_english_skill form_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "học form_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "học form_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề form_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề sang form_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề mới"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "mình muốn chọn chủ đề"
+      },
+      {
+        "intent": "next_question",
+        "text": "chọn câu tiếp theo"
+      },
+      {
+        "intent": "next_question",
+        "text": "next question"
+      },
+      {
+        "intent": "next_question",
+        "text": "câu tiếp theo"
+      },
+      {
+        "intent": "give_up",
+        "text": "bỏ qua"
+      },
+      {
+        "intent": "give_up",
+        "text": "mình bỏ cuộc đây"
+      },
+      {
+        "intent": "give_up",
+        "text": "mình chịu"
+      },
+      {
+        "intent": "show_hint",
+        "text": "xem gợi ý"
+      },
+      {
+        "intent": "show_hint",
+        "text": "mình muốn xem gợi ý"
+      },
+      {
+        "intent": "show_hint",
+        "text": "gợi ý"
+      },
+      {
+        "intent": "change_subject_global",
+        "text": "chọn chủ đề khác"
+      },
+      {
+        "intent": "change_subject_global",
+        "text": "đổi chủ đề khác"
+      },
+      {
+        "intent": "change_subject_global",
+        "text": "đổi chủ đề"
+      },
+      {
+        "intent": "ask_age",
+        "text": "bao nhiêu tuổi rồi"
+      },
+      {
+        "intent": "ask_age",
+        "text": "bạn bao nhiêu tuổi"
+      },
+      {
+        "intent": "ask_age",
+        "text": "Thỏ trắng bao nhiêu tuổi"
+      },
+      {
+        "intent": "ask_place",
+        "text": "quên ở đâu"
+      },
+      {
+        "intent": "ask_place",
+        "text": "bạn ở đâu"
+      },
+      {
+        "intent": "ask_place",
+        "text": "quê thỏ trắng ở đâu"
+      },
+      {
+        "intent": "ask_place",
+        "text": "quên bạn ở đâu"
+      },
+      {
+        "intent": "greetings",
+        "text": "bạn ơi"
+      },
+      {
+        "intent": "greetings",
+        "text": "chào thỏ trắng"
+      },
+      {
+        "intent": "greetings",
+        "text": "xin chào"
+      },
+      {
+        "intent": "greetings",
+        "text": "chào"
+      },
+      {
+        "intent": "greetings",
+        "text": "chao"
+      },
+      {
+        "intent": "greetings",
+        "text": "hello"
+      },
+      {
+        "intent": "greetings",
+        "text": "hi"
+      },
+      {
+        "intent": "exit_play",
+        "text": "dừng chơi"
+      },
+      {
+        "intent": "exit_play",
+        "text": "thoát"
+      },
+      {
+        "intent": "exit_play",
+        "text": "exit"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "form_reminder_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "đặt nhắc nhở và form_reminder_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "đặt nhắc nhở"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc mình học trong form_reminder_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc mình học vào form_reminder_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc học"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc mình học"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

@@ -1,0 +1,145 @@
+{
+    "language": "vi",
+    "pipeline": [
+        {
+            "model": "vi",
+            "case_sensitive": true,
+            "name": "SpacyNLP",
+            "class": "rasa.nlu.utils.spacy_utils.SpacyNLP"
+        },
+        {
+            "name": "SpacyTokenizer",
+            "class": "rasa.nlu.tokenizers.spacy_tokenizer.SpacyTokenizer"
+        },
+        {
+            "dimensions": [
+                "amount-of-money",
+                "numeral",
+                "time",
+                "number",
+                "email",
+                "url"
+            ],
+            "url": "http://localhost:9000",
+            "locale": "vi_VI",
+            "timezone": "Asia/Ho_Chi_Minh",
+            "name": "UetSystemEntityExtractor",
+            "class": "rasa.nlu.extractors.uet_system_entity_extractor.UetSystemEntityExtractor"
+        },
+        {
+            "name": "UetListEntityExtractor",
+            "class": "rasa.nlu.extractors.uet_list_entity_extractor.UetListEntityExtractor"
+        },
+        {
+            "name": "UetRegexEntityExtractor",
+            "class": "rasa.nlu.extractors.uet_regex_entity_extractor.UetRegexEntityExtractor"
+        },
+        {
+            "BILOU_flag": false,
+            "features": [
+                [
+                    "low",
+                    "title",
+                    "upper",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2"
+                ],
+                [
+                    "bias",
+                    "low",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2",
+                    "upper",
+                    "title",
+                    "digit",
+                    "pattern",
+                    "uet_digit",
+                    "uet_name"
+                ],
+                [
+                    "low",
+                    "title",
+                    "upper",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2"
+                ]
+            ],
+            "max_iterations": 250,
+            "L1_c": 0.1,
+            "L2_c": 0.1,
+            "name": "UetCRFEntityExtractor",
+            "file": "component_5_UetCRFEntityExtractor.pkl",
+            "class": "rasa.nlu.extractors.uet_crf_entity_extractor.UetCRFEntityExtractor"
+        },
+        {
+            "name": "UetReplaceEntity",
+            "class": "rasa.nlu.extractors.uet_replace_entities.UetReplaceEntity"
+        },
+        {
+            "BILOU_flag": false,
+            "features": [
+                [
+                    "low",
+                    "title",
+                    "upper",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2"
+                ],
+                [
+                    "bias",
+                    "low",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2",
+                    "upper",
+                    "title",
+                    "digit",
+                    "pattern",
+                    "uet_entity"
+                ],
+                [
+                    "low",
+                    "title",
+                    "upper",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2"
+                ]
+            ],
+            "max_iterations": 250,
+            "L1_c": 0.1,
+            "L2_c": 0.1,
+            "name": "UetCRFSlotExtractor",
+            "file": "component_7_UetCRFSlotExtractor.pkl",
+            "class": "rasa.nlu.extractors.uet_crf_slot_extractor.UetCRFSlotExtractor"
+        },
+        {
+            "name": "UetMergeEntity",
+            "class": "rasa.nlu.extractors.uet_merge_entities.UetMergeEntity"
+        },
+        {
+            "name": "EntitySynonymMapper",
+            "file": null,
+            "class": "rasa.nlu.extractors.entity_synonyms.EntitySynonymMapper"
+        }
+    ],
+    "training_data": "D:\\works\\rasabot\\_server\\yourbot\\storage\\data\\bots/tho_trang/model_rasa_ner\\training_data.json",
+    "trained_at": "20190714-061926",
+    "rasa_version": "1.1.4"
+}

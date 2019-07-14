@@ -1,0 +1,41 @@
+version: "3"
+services:
+  yourbot:
+    restart: always
+    image: sinhblack/yourbot:latest
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./docker_deploy_data/nltk_data:/root/nltk_data
+      - ./_server:/yourbot/_server
+    depends_on:
+      - mongodb
+      - duckling
+    environment:
+      - RASA_DUCKLING_HTTP_URL=http://duckling:9000
+      - MAX_NUMBER_OF_PREDICTIONS=20
+
+  mongodb:
+    restart: always
+    image: mongo
+    ports:
+      - "127.0.0.1:27018:27017"
+    volumes:
+      - ./docker_deploy_data/mongo_data:/data/db
+
+  duckling:
+    restart: always
+    image: sinhblack/duckling:latest
+    ports:
+      - "127.0.0.1:9000:9000"
+
+  yourbotui:
+    restart: always
+    image: sinhblack/yourbotui:latest
+    ports:
+      - "127.0.0.1:8001:8001"
+    volumes:
+      - ./_server/app-client/dist:/yourbotui/dist
+
+volumes:
+  dbdata:

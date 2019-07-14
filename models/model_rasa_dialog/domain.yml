@@ -1,0 +1,508 @@
+%YAML 1.1
+---
+actions:
+- app_app_custom_cancel_remider
+- app_app_custom_check_answer
+- app_app_custom_check_user_existed
+- app_app_custom_get_question
+- app_app_custom_run_remider
+- app_app_custom_save_user_info
+- app_app_custom_set_remider
+- app_app_custom_show_correct_answer
+- app_app_custom_show_hint
+- app_restart_custom_after_answer_result_correct
+- app_restart_custom_after_answer_result_wrong
+- app_restart_custom_after_set_reminder
+- app_restart_custom_after_show_hint
+- app_restart_custom_change_subject_global
+- app_restart_custom_exit_play
+- app_restart_custom_go_choose_english_skill
+- app_restart_custom_go_choose_subject
+- app_restart_custom_go_play
+- app_restart_custom_user_existed
+- app_set_slot_after_answer_result_correct
+- app_set_slot_after_answer_result_wrong
+- app_set_slot_after_choose_english_skill
+- app_set_slot_after_choose_subject
+- app_set_slot_after_choose_subject_english
+- app_set_slot_after_get_answer
+- app_set_slot_after_got_info
+- app_set_slot_after_set_reminder
+- utter_utter_after_choose_subject
+- utter_utter_after_choose_subject_english
+- utter_utter_after_choose_subject_math
+- utter_utter_answer_result_correct
+- utter_utter_answer_result_wrong
+- utter_utter_exit_play_response
+- utter_utter_give_up_boost
+- utter_utter_greet
+- utter_utter_greets_first_time
+- utter_utter_greets_user_existed
+- app_utter_revert_ask_age
+- app_utter_revert_ask_place
+- utter_utter_show_english_skill_options
+- utter_utter_show_function_first_time
+- utter_utter_show_next_question
+- utter_utter_show_subject_options
+config:
+  app_function: app.bots.action_bridge.action_function
+  db_name: tho_trang
+  store_entities_as_slots: true
+entities:
+- form_english_skill
+- form_reminder_time
+- form_subject
+forms:
+- app_form_choose_english_skill
+- app_form_choose_subject
+- app_form_get_answer
+- app_form_get_user_info
+- app_form_set_reminder
+intents:
+- ask_age:
+    ignore_entities: []
+    triggers: app_utter_revert_ask_age
+    use_entities: []
+- ask_place:
+    ignore_entities: []
+    triggers: app_utter_revert_ask_place
+    use_entities: []
+- change_subject_global:
+    ignore_entities: []
+    triggers: app_restart_custom_change_subject_global
+    use_entities: []
+- choose_subject:
+    ignore_entities: []
+    use_entities: []
+- exit_play:
+    ignore_entities: []
+    triggers: app_restart_custom_exit_play
+    use_entities: true
+- exit_play_with_response:
+    ignore_entities: []
+    use_entities: true
+- get_started:
+    ignore_entities: []
+    use_entities: []
+- give_up:
+    ignore_entities: []
+    use_entities: true
+- greetings:
+    ignore_entities: []
+    use_entities: true
+- inform:
+    ignore_entities: []
+    use_entities: true
+- next_question:
+    ignore_entities: []
+    use_entities: true
+- play:
+    ignore_entities: []
+    use_entities: true
+- restart:
+    ignore_entities: []
+    use_entities: []
+- set_reminder:
+    ignore_entities: []
+    use_entities: []
+- show_hint:
+    ignore_entities: []
+    use_entities: true
+- system_out_of_intent:
+    ignore_entities: []
+    use_entities: []
+slots:
+  form_answer:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  form_english_skill:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  form_reminder_time:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  form_subject:
+    auto_fill: true
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  form_user_age:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  form_user_name:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  requested_slot:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  user_age:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  user_answer:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  user_answer_result:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.CategoricalSlot
+    values:
+    - correct
+    - wrong
+  user_current_subject:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.CategoricalSlot
+    values:
+    - english
+    - math
+  user_english_skill:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  user_id:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  user_is_existed:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.TextSlot
+  user_name:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  user_question_id:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+  user_reminder_time:
+    auto_fill: false
+    initial_value: null
+    type: rasa.core.slots.UnfeaturizedSlot
+templates:
+  app_utter_revert_ask_age:
+  - custom:
+    - attachment:
+        payload:
+          buttons: []
+          elements: []
+          is_reusable: false
+          template_type: ''
+          text: ''
+          url: https://media3.giphy.com/media/Gq2wO3O5qyM1i/giphy.gif?cid=790b76115d2375165a706e2f6f659a1a&rid=giphy.gif
+        type: image
+      quick_replies: []
+      text: ''
+    text: Mình năm nay 1 tuổi nha! 💗🐝🦄
+  app_utter_revert_ask_place:
+  - custom:
+    - attachment:
+        payload:
+          buttons: []
+          elements: []
+          is_reusable: false
+          template_type: ''
+          text: ''
+          url: https://cauhoi-api.sachmem.vn/api/media/5a7a6ce0df9f8a998da5e8cc.mp3
+        type: audio
+      quick_replies: []
+      text: ''
+    text: Mình ở Việt Nam 🇻🇳 🇻🇳 🇻🇳
+  utter_ask_form_answer: []
+  utter_ask_form_english_skill:
+  - custom:
+    - attachment:
+        payload:
+          buttons:
+          - payload: nghe
+            title: Nghe
+            type: postback
+            url: ''
+          - payload: ngữ pháp
+            title: Ngữ pháp
+            type: postback
+            url: ''
+          - payload: tổng hợp
+            title: Tổng hợp
+            type: postback
+            url: ''
+          elements: []
+          is_reusable: false
+          template_type: button
+          text: Các kỹ năng Tiếng Anh
+          url: ''
+        type: template
+      quick_replies: []
+      text: ''
+    text: Bạn muốn chọn kỹ năng Tiếng Anh gì?
+  utter_ask_form_reminder_time:
+  - custom: []
+    text: Khi nào bạn muốn mình nhắc học?
+  utter_ask_form_subject:
+  - custom:
+    - quick_replies:
+      - content_type: text
+        image_url: ''
+        payload: toán
+        title: Toán
+      - content_type: text
+        image_url: ''
+        payload: tiếng anh
+        title: Tiếng Anh
+      text: Bạn muốn chọn chủ đề gì?
+    text: ''
+  utter_ask_form_user_age:
+  - custom: []
+    text: Bạn bao nhiêu tuổi?
+  utter_ask_form_user_name:
+  - custom: []
+    text: Mình có thể gọi bạn là gì?
+  - custom: []
+    text: Tên bạn là gì?
+  utter_default:
+  - custom: []
+    text: A ha mình Thỏ Trắng chưa được dạy trả lời câu này! :D
+  utter_submit_app_form_choose_english_skill:
+  - custom: []
+    text: Bạn đã chọn kỹ năng {form_english_skill}
+  utter_submit_app_form_choose_subject:
+  - custom: []
+    text: ''
+  utter_submit_app_form_get_answer: []
+  utter_submit_app_form_get_user_info:
+  - custom: []
+    text: Ok {form_user_name}, {form_user_age} tuổi! :D Mình nhớ rồi nha!
+  utter_submit_app_form_set_reminder:
+  - custom: []
+    text: Ok! Mình sẽ nhắc bạn học nha.
+  utter_utter_after_choose_subject:
+  - custom: []
+    text: Xem bạn có trả lời được câu dưới không nha!
+  utter_utter_after_choose_subject_english:
+  - custom: []
+    text: Bạn đã chọn chủ đề Tiếng Anh với kỹ năng {user_english_skill}
+  utter_utter_after_choose_subject_math:
+  - custom: []
+    text: Xem bạn trả lời được các câu Toán không nha
+  utter_utter_answer_result_correct:
+  - custom: []
+    text: 'Đúng rồi nha! Câu trả lời là:'
+  utter_utter_answer_result_wrong:
+  - custom:
+    - quick_replies:
+      - content_type: text
+        image_url: ''
+        payload: /show_hint
+        title: Xem gợi ý
+      - content_type: text
+        image_url: ''
+        payload: /give_up
+        title: Bỏ qua
+      - content_type: text
+        image_url: ''
+        payload: /exit_play
+        title: Dừng chơi
+      - content_type: text
+        image_url: ''
+        payload: /change_subject_global
+        title: Đổi chủ đề
+      text: ''
+    text: Câu trả lời chưa đúng nha! Bạn hãy trả lời lại.
+  utter_utter_exit_play_response:
+  - custom: []
+    text: Đã thoát chơi nha bạn 💓
+  utter_utter_give_up_boost:
+  - custom:
+    - quick_replies:
+      - content_type: text
+        image_url: ''
+        payload: /next_question
+        title: Câu tiếp theo
+      - content_type: text
+        image_url: ''
+        payload: /exit_play
+        title: Dừng chơi
+      - content_type: text
+        image_url: ''
+        payload: /change_subject_global
+        title: Đổi chủ đề
+      text: ''
+    text: Hihi 💪 cố gằng lần sau nha!! 💥 💥
+  utter_utter_greet:
+  - custom:
+    - quick_replies:
+      - content_type: text
+        image_url: ''
+        payload: chọn chủ đề
+        title: Chọn chủ đề
+      - content_type: text
+        image_url: ''
+        payload: học tiếng anh
+        title: Học Tiếng Anh
+      - content_type: text
+        image_url: ''
+        payload: học toán
+        title: Học Toán
+      - content_type: text
+        image_url: ''
+        payload: nhắc học
+        title: Nhắc học
+      text: ''
+    text: Xin chào {user_name} :D. Mình có thể giúp gì cho bạn?
+  utter_utter_greets_first_time:
+  - custom: []
+    text: Xin chào bạn! Mình là Thỏ Trắng vì đây là lần đầu gặp nhau cho mình tý thông
+      tin nha!
+  utter_utter_greets_user_existed:
+  - custom:
+    - quick_replies:
+      - content_type: text
+        image_url: ''
+        payload: /choose_subject
+        title: Chọn chủ đề học
+      - content_type: text
+        image_url: ''
+        payload: học tiếng anh
+        title: Học Tiếng Anh
+      - content_type: text
+        image_url: ''
+        payload: học toán
+        title: Học Toán
+      - content_type: text
+        image_url: ''
+        payload: nhắc học
+        title: Nhắc học
+      text: ''
+    text: Chào {user_name}! :D Mình có thể giúp gì cho bạn?
+  utter_utter_show_english_skill_options:
+  - custom:
+    - attachment:
+        payload:
+          buttons:
+          - payload: nghe
+            title: Nghe
+            type: postback
+            url: ''
+          - payload: ngữ pháp
+            title: Ngữ pháp
+            type: postback
+            url: ''
+          - payload: tổng hợp
+            title: Tổng hợp
+            type: postback
+            url: ''
+          elements: []
+          is_reusable: false
+          template_type: button
+          text: Các kỹ năng Tiếng Anh
+          url: ''
+        type: template
+      quick_replies: []
+      text: ''
+    text: Chọn kỹ năng Tiếng Anh
+  utter_utter_show_function_first_time:
+  - custom:
+    - quick_replies:
+      - content_type: text
+        image_url: ''
+        payload: /choose_subject
+        title: Chọn chủ đề
+      - content_type: text
+        image_url: ''
+        payload: học tiếng anh
+        title: Học tiếng anh
+      - content_type: text
+        image_url: ''
+        payload: học toán
+        title: Học toán
+      - content_type: text
+        image_url: ''
+        payload: nhắc nhọc
+        title: Nhắc học
+      text: ''
+    text: Mình có thể hỗ trợ bạn học tập hiệu quả hơn. Mình có thể giúp bạn ...
+  utter_utter_show_next_question:
+  - custom:
+    - attachment:
+        payload:
+          buttons:
+          - payload: /next_question
+            title: Next
+            type: postback
+            url: ''
+          elements: []
+          is_reusable: false
+          template_type: button
+          text: Câu tiếp theo
+          url: ''
+        type: template
+      quick_replies:
+      - content_type: text
+        image_url: ''
+        payload: /next_question
+        title: Câu tiếp theo
+      - content_type: text
+        image_url: ''
+        payload: /exit_play
+        title: Dừng chơi
+      text: ''
+    text: ''
+  utter_utter_show_subject_options:
+  - custom:
+    - attachment:
+        payload:
+          buttons: []
+          elements:
+          - buttons:
+            - payload: toán
+              title: Toán
+              type: postback
+              url: ''
+            default_action:
+              type: web_url
+              url: http://botcuaban.com
+              webview_height_ratio: tall
+            image_url: https://blog.edx.org/wp-content/uploads/2016/04/Math-1.jpg
+            subtitle: Toán học cấp 1, 2
+            title: Toán
+          - buttons:
+            - payload: tiếng anh
+              title: Tiếng Anh
+              type: postback
+              url: ''
+            default_action:
+              type: web_url
+              url: http://botcuaban.com
+              webview_height_ratio: tall
+            image_url: https://preply.com/wp-content/uploads/2018/11/unnamed.jpg
+            subtitle: Học Tiếng Anh nào
+            title: Tiếng Anh
+          is_reusable: false
+          template_type: generic
+          text: ''
+          url: ''
+        type: template
+      quick_replies: []
+      text: Các chủ đề gồm
+    text: Các chủ đề là
+  utter_wrong_form_answer: []
+  utter_wrong_form_english_skill:
+  - custom: []
+    text: Mình không hỗ trợ kỹ năng trên :DDDD!
+  utter_wrong_form_reminder_time:
+  - custom: []
+    text: Mình không hiểu định dạng trên :D Bạn có thể nhập 8 giờ tối nay, ...
+  utter_wrong_form_subject:
+  - custom: []
+    text: Mình không hỗ trợ chủ đề trên nha :D !
+  utter_wrong_form_user_age:
+  - custom: []
+    text: Bạn nhập đúng định dạng nha! :DD. (từ 1 đền 200)!
+  utter_wrong_form_user_name: []

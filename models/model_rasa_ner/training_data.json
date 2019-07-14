@@ -1,0 +1,788 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "get_started",
+        "text": "bắt đầu như thế nào"
+      },
+      {
+        "intent": "get_started",
+        "text": "mình muốn dùng"
+      },
+      {
+        "intent": "get_started",
+        "text": "how to get started"
+      },
+      {
+        "intent": "get_started",
+        "text": "get started"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "ngữ pháp"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 0,
+            "end": 14,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 0,
+            "end": 14,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 0,
+            "end": 14,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "tiếng anh"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 0,
+            "end": 8,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 0,
+            "end": 8,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 0,
+            "end": 8,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "nghe"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 0,
+            "end": 14,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 0,
+            "end": 14,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 0,
+            "end": 14,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_english_skill"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "toán"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 0,
+            "end": 8,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 0,
+            "end": 8,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 0,
+            "end": 8,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "luyện ngữ pháp tiếng anh"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 6,
+            "end": 20,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "luyện _english_skill anh"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 6,
+            "end": 20,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "luyện _english_skill anh"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 6,
+            "end": 20,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "luyện _english_skill anh"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "học nghe tiếng anh"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 4,
+            "end": 18,
+            "extractor": "UetCRFSlotExtractor"
+          },
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 19,
+            "end": 27,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _english_skill _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 4,
+            "end": 18,
+            "extractor": "UetCRFSlotExtractor"
+          },
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 19,
+            "end": 27,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _english_skill _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_english_skill",
+            "entity": "form_english_skill",
+            "start": 4,
+            "end": 18,
+            "extractor": "UetCRFSlotExtractor"
+          },
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 19,
+            "end": 27,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _english_skill _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "học toán"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 4,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 4,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 4,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "học tiếng anh"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 4,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 4,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 4,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "học _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề tiếng anh"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 12,
+            "end": 20,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "chọn chủ đề _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 12,
+            "end": 20,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "chọn chủ đề _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 12,
+            "end": 20,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "chọn chủ đề _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề sang toán"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 17,
+            "end": 25,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "chọn chủ đề sang _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 17,
+            "end": 25,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "chọn chủ đề sang _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "entities": [
+          {
+            "value": "_subject",
+            "entity": "form_subject",
+            "start": 17,
+            "end": 25,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "chọn chủ đề sang _subject"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "chọn chủ đề mới"
+      },
+      {
+        "intent": "choose_subject",
+        "text": "mình muốn chọn chủ đề"
+      },
+      {
+        "intent": "next_question",
+        "text": "chọn câu tiếp theo"
+      },
+      {
+        "intent": "next_question",
+        "text": "next question"
+      },
+      {
+        "intent": "next_question",
+        "text": "câu tiếp theo"
+      },
+      {
+        "intent": "give_up",
+        "text": "bỏ qua"
+      },
+      {
+        "intent": "give_up",
+        "text": "mình bỏ cuộc đây"
+      },
+      {
+        "intent": "give_up",
+        "text": "mình chịu"
+      },
+      {
+        "intent": "show_hint",
+        "text": "xem gợi ý"
+      },
+      {
+        "intent": "show_hint",
+        "text": "mình muốn xem gợi ý"
+      },
+      {
+        "intent": "show_hint",
+        "text": "gợi ý"
+      },
+      {
+        "intent": "change_subject_global",
+        "text": "chọn chủ đề khác"
+      },
+      {
+        "intent": "change_subject_global",
+        "text": "đổi chủ đề khác"
+      },
+      {
+        "intent": "change_subject_global",
+        "text": "đổi chủ đề"
+      },
+      {
+        "intent": "ask_age",
+        "text": "bao nhiêu tuổi rồi"
+      },
+      {
+        "intent": "ask_age",
+        "text": "bạn bao nhiêu tuổi"
+      },
+      {
+        "intent": "ask_age",
+        "text": "Thỏ trắng bao nhiêu tuổi"
+      },
+      {
+        "intent": "ask_place",
+        "text": "quên ở đâu"
+      },
+      {
+        "intent": "ask_place",
+        "text": "bạn ở đâu"
+      },
+      {
+        "intent": "ask_place",
+        "text": "quê thỏ trắng ở đâu"
+      },
+      {
+        "intent": "ask_place",
+        "text": "quên bạn ở đâu"
+      },
+      {
+        "intent": "greetings",
+        "text": "bạn ơi"
+      },
+      {
+        "intent": "greetings",
+        "text": "chào thỏ trắng"
+      },
+      {
+        "intent": "greetings",
+        "text": "xin chào"
+      },
+      {
+        "intent": "greetings",
+        "text": "chào"
+      },
+      {
+        "intent": "greetings",
+        "text": "chao"
+      },
+      {
+        "intent": "greetings",
+        "text": "hello"
+      },
+      {
+        "intent": "greetings",
+        "text": "hi"
+      },
+      {
+        "intent": "exit_play",
+        "text": "dừng chơi"
+      },
+      {
+        "intent": "exit_play",
+        "text": "thoát"
+      },
+      {
+        "intent": "exit_play",
+        "text": "exit"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "9 giờ tối nay"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 0,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 0,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 0,
+            "end": 12,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "_system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "đặt nhắc nhở và 10 giờ sáng mai"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 16,
+            "end": 28,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "đặt nhắc nhở và _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 16,
+            "end": 28,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "đặt nhắc nhở và _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 16,
+            "end": 28,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "đặt nhắc nhở và _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "đặt nhắc nhở"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc mình học trong 10 phút sau"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 20,
+            "end": 32,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "nhắc mình học trong _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 20,
+            "end": 32,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "nhắc mình học trong _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 20,
+            "end": 32,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "nhắc mình học trong _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc mình học vào 3h chiều nay"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 18,
+            "end": 30,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "nhắc mình học vào _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 18,
+            "end": 30,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "nhắc mình học vào _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "entities": [
+          {
+            "value": "_system_time",
+            "entity": "form_reminder_time",
+            "start": 18,
+            "end": 30,
+            "extractor": "UetCRFSlotExtractor"
+          }
+        ],
+        "text": "nhắc mình học vào _system_time"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc học"
+      },
+      {
+        "intent": "set_reminder",
+        "text": "nhắc mình học"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
